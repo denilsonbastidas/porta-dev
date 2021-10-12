@@ -214,6 +214,7 @@
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    animation: showIcons 1s ease;
 
     i {
       animation: cog 2s linear infinite;

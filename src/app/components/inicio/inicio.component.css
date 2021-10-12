@@ -295,6 +295,8 @@
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-animation: showIcons 1s ease;
+          animation: showIcons 1s ease;
 }
 
 .cont-themes .cont-cog i {
