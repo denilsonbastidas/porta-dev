@@ -1,0 +1,32 @@
+$color-claroA:#3b98e9;
+$bg-header:#1a76d2;
+$color-oscuroA:#1c62b9;
+$color-oscuro:#333;
+$color-gray:#f2f2f2;
+$text-muted:#888;
+
+
+//?====== keyframes =========
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes showIcons {
+    0%{
+        transform: translateY(60%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-flow: $direction wrap;
+}
+

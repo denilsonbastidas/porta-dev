@@ -1,0 +1,262 @@
+@import '../../../assets/styles/variables';
+
+.cont-title,
+.cont-title-Dwo {
+  @include flex(column);
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  animation: show 1s ease;
+
+  h2 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    width: 50%;
+    font-size: 17px;
+    font-weight: 200;
+    color: #444;
+  }
+}
+
+//? section tecnologias
+@mixin progress($color, $size) {
+  background: $color;
+  padding: 2px;
+  border-radius: 5px;
+  flex-basis: $size;
+}
+
+@mixin iconLogo() {
+  color: $color-oscuro;
+  font-size: 30px;
+  margin: 10px;
+}
+
+%cont-card {
+  @include flex(row);
+  align-items: center;
+  flex-grow: 1;
+  background: #fff;
+  box-shadow: 0px 1px 3px #555;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  animation: showIcons 300ms ease;
+}
+
+.cont-tecno {
+  @include flex(column);
+  width: 95%;
+  padding-left: 20px;
+  overflow: hidden;
+
+  //? ==== rwoOne ======
+  .row {
+    @include flex(row);
+    margin-bottom: 25px;
+
+    .cont-html,
+    .cont-css,
+    .cont-sass,
+    .cont-less,
+    .cont-responsive {
+      @extend %cont-card;
+
+      i {
+        @include iconLogo();
+      }
+
+      p {
+        margin: 5px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      small {
+        color: $text-muted;
+        width: 100%;
+        text-align: end;
+      }
+
+      .progres-bar-html {
+        @include progress(#fe732e, 95%);
+      }
+
+      .progres-bar-css {
+        @include progress(#12a1f8, 90%);
+      }
+
+      .progres-bar-sass {
+        @include progress(#fa5b7d, 80%);
+      }
+
+      .progres-bar-less {
+        @include progress($color-oscuroA, 75%);
+      }
+
+      .progres-bar-responsive {
+        @include progress(#ccc, 85%);
+      }
+    }
+  }
+
+  //? ==== rwoDwo ======
+  .rowDwo {
+    @include flex(row);
+    margin-bottom: 25px;
+
+    .cont-jquery{
+      padding: 15px;
+    }
+    .cont-bootstrap,
+    .cont-javascript,
+    .cont-jquery,
+    .cont-git,
+    .cont-angular {
+      @extend %cont-card;
+
+      i {
+        @include iconLogo();
+      }
+
+      p {
+        margin: 5px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      small {
+        color: $text-muted;
+        width: 100%;
+        text-align: end;
+      }
+
+      .progres-bar-bootstrap {
+        @include progress(#7953b3, 80%);
+      }
+
+      .progres-bar-java {
+        @include progress(#faed4d, 80%);
+      }
+
+      .progres-bar-jquery {
+        @include progress(#0669ad, 90%);
+      }
+
+      .progres-bar-git {
+        @include progress($color-oscuro, 70%);
+      }
+
+      .progres-bar-angular {
+        @include progress(#e2321f, 75%);
+      }
+    }
+  }
+}
+
+//? === tecnologias a aprender ======
+.cont-title-Dwo {
+  margin-top: 50px;
+  text-align: center;
+
+  h2 span {
+    font-size: 20px;
+    color: $text-muted;
+  }
+}
+
+.rowProcess {
+  @include flex(row);
+  margin: 0px auto;
+  width: 80%;
+  margin-bottom: 120px;
+
+  .cont-node,
+  .cont-mongodb,
+  .cont-django,
+  .cont-python,
+  .cont-postgreSQL {
+    @extend %cont-card;
+    border-left: 4px solid $color-oscuro;
+    justify-content: center;
+    transition: all 300ms;
+    box-shadow: 0px 1px 4px $color-claroA;
+
+    i {
+      @include iconLogo();
+    }
+
+    p {
+      margin: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.cont-node:hover,
+.cont-mongodb:hover,
+.cont-django:hover,
+.cont-python:hover,
+.cont-postgreSQL:hover {
+  transform: translateY(-8px);
+}
+
+// >>>>>>>>>>>> responsive >>>>>>>>>>>
+@media (max-width:800px) {
+  .cont-title {
+    margin-top: 0px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+.cont-tecno{
+  padding-left: 0px;
+  width: 100%;
+}
+  .row,
+  .rowDwo,
+  .rowProcess {
+    >div {
+      flex-basis: 100% !important;
+    }
+  }
+
+  .rowDwo {
+    margin-bottom: 0px !important;
+  }
+
+  .rowProcess {
+    margin-bottom: 40px;
+    flex-basis: 100%;
+  }
+
+  .cont-title-Dwo {
+    h2,span {
+      font-size: 30px !important;
+    }
+  }
+}
+
+@media (max-width:560px) {
+  .cont-title {
+    h2{
+      font-size: 25px;
+    }
+    p{
+      width: 100%;
+    }
+  }
+  .cont-title-Dwo {
+    h2 ,span{
+      font-size: 20px !important;
+    }
+  }
+}

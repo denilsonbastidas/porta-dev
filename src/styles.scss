@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+$font-main:'Roboto Condensed',
+sans-serif;
+
+//? ===== Generales ======
+.container {
+  margin-top: 80px;
+}
+
+body {
+  font-family: $font-main;
+  color: $color-oscuro;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-image: url(assets/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $color-oscuro;
+  border-radius: 100px;
+}
+
+.active {
+  background: $color-claroA;
+  border-radius: 4px;
+}
+
+@media (max-width:525px) {
+  body{
+    background-image:url(assets/images/pattern-background-mobile.svg)  ;
+  }
+}
+

@@ -1,0 +1,33 @@
+<header #header class="header">
+  <div class="logo">
+    <a [routerLink]="['/']">
+      <div class="cont-photo">
+        <img src="../../../assets/images/caricatura-masculina.png" alt="">
+      </div>
+      Denilson Bastidas
+    </a>
+  </div>
+
+  <div class="cont-bars" (click)="activeNav(nav)">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="nav" #nav>
+    <ul (click)="activeNav(nav)" >
+      <li>
+        <a [routerLink]="['/']" [routerLinkActiveOptions]="{exact: true}" [routerLinkActive]="['active']">Inicio</a>
+      </li>
+      <li>
+        <a [routerLink]="['/acerca']" [routerLinkActive]="['active']">Acerca</a>
+      </li>
+      <li>
+
+        <a [routerLink]="['/tecnologias']" [routerLinkActive]="['active']">Tecnologías</a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/proyectos']" [routerLinkActive]="['active']">Proyectos</a>
+      </li>
+    </ul>
+  </nav>
+</header>

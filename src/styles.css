@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showIcons {
+  0% {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes showIcons {
+  0% {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.container {
+  margin-top: 80px;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(assets/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 100px;
+}
+
+.active {
+  background: #3b98e9;
+  border-radius: 4px;
+}
+
+@media (max-width: 525px) {
+  body {
+    background-image: url(assets/images/pattern-background-mobile.svg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

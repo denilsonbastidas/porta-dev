@@ -1,0 +1,62 @@
+@import "../../../assets/styles/variables";
+//? ========== Footer ==========
+.footer{
+    @include flex(row);
+    background: #111;
+    justify-content: center;
+    min-height: 200px;
+  
+  .cont-repo{
+    text-align: center;
+    color: #fff;
+  
+    .text-repo{
+      @include flex(column);
+      align-items: center;
+      h3{
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
+      p{
+        color: #ccc;
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .cont-repo-btn{
+      margin-bottom: 30px;
+  
+      a{
+        text-decoration: none;
+        color: #fff;
+        background: $color-oscuroA;
+        padding: 10px;
+        border-radius: 4px;
+        transition: all 300ms;
+        overflow: hidden;
+      }
+      a:hover{
+        background: #fff;
+        color: $color-oscuro;
+        box-shadow: 0px 1px 4px #444;
+      }
+    }
+  
+    .end-foo{
+      border-top: 1px solid $color-gray;
+      h1{
+        letter-spacing: 2px;
+        font-size: 25px;
+      }
+    }
+  }  
+  }
+  // >>>>>>>>>< responsive >>>>>>>>>>>
+  @media (max-width:320px) {
+    .footer{
+      p{
+        width: 100% !important;
+      }
+    }
+  }

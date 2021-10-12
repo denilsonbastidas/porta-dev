@@ -1,0 +1,440 @@
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showIcons {
+  0% {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes showIcons {
+  0% {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.cont-title,
+.cont-title-Dwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  -webkit-animation: show 1s ease;
+          animation: show 1s ease;
+}
+
+.cont-title h2,
+.cont-title-Dwo h2 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.cont-title p,
+.cont-title-Dwo p {
+  width: 50%;
+  font-size: 17px;
+  font-weight: 200;
+  color: #444;
+}
+
+.cont-tecno .row .cont-html,
+.cont-tecno .row .cont-css,
+.cont-tecno .row .cont-sass,
+.cont-tecno .row .cont-less,
+.cont-tecno .row .cont-responsive, .cont-tecno .rowDwo .cont-bootstrap,
+.cont-tecno .rowDwo .cont-javascript,
+.cont-tecno .rowDwo .cont-jquery,
+.cont-tecno .rowDwo .cont-git,
+.cont-tecno .rowDwo .cont-angular, .rowProcess .cont-node,
+.rowProcess .cont-mongodb,
+.rowProcess .cont-django,
+.rowProcess .cont-python,
+.rowProcess .cont-postgreSQL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 3px #555;
+          box-shadow: 0px 1px 3px #555;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-animation: showIcons 300ms ease;
+          animation: showIcons 300ms ease;
+}
+
+.cont-tecno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 95%;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.cont-tecno .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 25px;
+}
+
+.cont-tecno .row .cont-html i,
+.cont-tecno .row .cont-css i,
+.cont-tecno .row .cont-sass i,
+.cont-tecno .row .cont-less i,
+.cont-tecno .row .cont-responsive i {
+  color: #333;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.cont-tecno .row .cont-html p,
+.cont-tecno .row .cont-css p,
+.cont-tecno .row .cont-sass p,
+.cont-tecno .row .cont-less p,
+.cont-tecno .row .cont-responsive p {
+  margin: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cont-tecno .row .cont-html small,
+.cont-tecno .row .cont-css small,
+.cont-tecno .row .cont-sass small,
+.cont-tecno .row .cont-less small,
+.cont-tecno .row .cont-responsive small {
+  color: #888;
+  width: 100%;
+  text-align: end;
+}
+
+.cont-tecno .row .cont-html .progres-bar-html,
+.cont-tecno .row .cont-css .progres-bar-html,
+.cont-tecno .row .cont-sass .progres-bar-html,
+.cont-tecno .row .cont-less .progres-bar-html,
+.cont-tecno .row .cont-responsive .progres-bar-html {
+  background: #fe732e;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+}
+
+.cont-tecno .row .cont-html .progres-bar-css,
+.cont-tecno .row .cont-css .progres-bar-css,
+.cont-tecno .row .cont-sass .progres-bar-css,
+.cont-tecno .row .cont-less .progres-bar-css,
+.cont-tecno .row .cont-responsive .progres-bar-css {
+  background: #12a1f8;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+
+.cont-tecno .row .cont-html .progres-bar-sass,
+.cont-tecno .row .cont-css .progres-bar-sass,
+.cont-tecno .row .cont-sass .progres-bar-sass,
+.cont-tecno .row .cont-less .progres-bar-sass,
+.cont-tecno .row .cont-responsive .progres-bar-sass {
+  background: #fa5b7d;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.cont-tecno .row .cont-html .progres-bar-less,
+.cont-tecno .row .cont-css .progres-bar-less,
+.cont-tecno .row .cont-sass .progres-bar-less,
+.cont-tecno .row .cont-less .progres-bar-less,
+.cont-tecno .row .cont-responsive .progres-bar-less {
+  background: #1c62b9;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.cont-tecno .row .cont-html .progres-bar-responsive,
+.cont-tecno .row .cont-css .progres-bar-responsive,
+.cont-tecno .row .cont-sass .progres-bar-responsive,
+.cont-tecno .row .cont-less .progres-bar-responsive,
+.cont-tecno .row .cont-responsive .progres-bar-responsive {
+  background: #ccc;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+}
+
+.cont-tecno .rowDwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 25px;
+}
+
+.cont-tecno .rowDwo .cont-jquery {
+  padding: 15px;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap i,
+.cont-tecno .rowDwo .cont-javascript i,
+.cont-tecno .rowDwo .cont-jquery i,
+.cont-tecno .rowDwo .cont-git i,
+.cont-tecno .rowDwo .cont-angular i {
+  color: #333;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap p,
+.cont-tecno .rowDwo .cont-javascript p,
+.cont-tecno .rowDwo .cont-jquery p,
+.cont-tecno .rowDwo .cont-git p,
+.cont-tecno .rowDwo .cont-angular p {
+  margin: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap small,
+.cont-tecno .rowDwo .cont-javascript small,
+.cont-tecno .rowDwo .cont-jquery small,
+.cont-tecno .rowDwo .cont-git small,
+.cont-tecno .rowDwo .cont-angular small {
+  color: #888;
+  width: 100%;
+  text-align: end;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap .progres-bar-bootstrap,
+.cont-tecno .rowDwo .cont-javascript .progres-bar-bootstrap,
+.cont-tecno .rowDwo .cont-jquery .progres-bar-bootstrap,
+.cont-tecno .rowDwo .cont-git .progres-bar-bootstrap,
+.cont-tecno .rowDwo .cont-angular .progres-bar-bootstrap {
+  background: #7953b3;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap .progres-bar-java,
+.cont-tecno .rowDwo .cont-javascript .progres-bar-java,
+.cont-tecno .rowDwo .cont-jquery .progres-bar-java,
+.cont-tecno .rowDwo .cont-git .progres-bar-java,
+.cont-tecno .rowDwo .cont-angular .progres-bar-java {
+  background: #faed4d;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap .progres-bar-jquery,
+.cont-tecno .rowDwo .cont-javascript .progres-bar-jquery,
+.cont-tecno .rowDwo .cont-jquery .progres-bar-jquery,
+.cont-tecno .rowDwo .cont-git .progres-bar-jquery,
+.cont-tecno .rowDwo .cont-angular .progres-bar-jquery {
+  background: #0669ad;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap .progres-bar-git,
+.cont-tecno .rowDwo .cont-javascript .progres-bar-git,
+.cont-tecno .rowDwo .cont-jquery .progres-bar-git,
+.cont-tecno .rowDwo .cont-git .progres-bar-git,
+.cont-tecno .rowDwo .cont-angular .progres-bar-git {
+  background: #333;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap .progres-bar-angular,
+.cont-tecno .rowDwo .cont-javascript .progres-bar-angular,
+.cont-tecno .rowDwo .cont-jquery .progres-bar-angular,
+.cont-tecno .rowDwo .cont-git .progres-bar-angular,
+.cont-tecno .rowDwo .cont-angular .progres-bar-angular {
+  background: #e2321f;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.cont-title-Dwo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cont-title-Dwo h2 span {
+  font-size: 20px;
+  color: #888;
+}
+
+.rowProcess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0px auto;
+  width: 80%;
+  margin-bottom: 120px;
+}
+
+.rowProcess .cont-node,
+.rowProcess .cont-mongodb,
+.rowProcess .cont-django,
+.rowProcess .cont-python,
+.rowProcess .cont-postgreSQL {
+  border-left: 4px solid #333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-box-shadow: 0px 1px 4px #3b98e9;
+          box-shadow: 0px 1px 4px #3b98e9;
+}
+
+.rowProcess .cont-node i,
+.rowProcess .cont-mongodb i,
+.rowProcess .cont-django i,
+.rowProcess .cont-python i,
+.rowProcess .cont-postgreSQL i {
+  color: #333;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.rowProcess .cont-node p,
+.rowProcess .cont-mongodb p,
+.rowProcess .cont-django p,
+.rowProcess .cont-python p,
+.rowProcess .cont-postgreSQL p {
+  margin: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cont-node:hover,
+.cont-mongodb:hover,
+.cont-django:hover,
+.cont-python:hover,
+.cont-postgreSQL:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+@media (max-width: 800px) {
+  .cont-title {
+    margin-top: 0px;
+  }
+  .cont-title h2 {
+    font-size: 30px;
+  }
+  .cont-tecno {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .row > div,
+  .rowDwo > div,
+  .rowProcess > div {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  .rowDwo {
+    margin-bottom: 0px !important;
+  }
+  .rowProcess {
+    margin-bottom: 40px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .cont-title-Dwo h2, .cont-title-Dwo span {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .cont-title h2 {
+    font-size: 25px;
+  }
+  .cont-title p {
+    width: 100%;
+  }
+  .cont-title-Dwo h2, .cont-title-Dwo span {
+    font-size: 20px !important;
+  }
+}
+/*# sourceMappingURL=tecnologias.component.css.map */
