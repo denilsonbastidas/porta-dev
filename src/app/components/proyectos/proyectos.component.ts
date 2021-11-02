@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProjectExterna} from '../../services/cargaExterna';
 
 @Component({
   selector: 'app-proyectos',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectosComponent implements OnInit {
 
-  constructor() { }
+  public projectArray = ProjectExterna;
+  constructor() {
+    console.log(this.projectArray);
+    
+   }
 
   ngOnInit(): void {
   }

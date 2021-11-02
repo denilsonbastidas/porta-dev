@@ -121,6 +121,11 @@
   margin-bottom: 10px;
 }
 
+.wrap .cont-card .link-card {
+  -webkit-animation: show 1s ease;
+          animation: show 1s ease;
+}
+
 .wrap .cont-card .link-card .description {
   position: absolute;
   top: 5%;

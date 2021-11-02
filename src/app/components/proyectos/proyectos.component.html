@@ -7,43 +7,17 @@
         Realizadas en mi experiencia.</p>
     </div>
 
-    <!-- Portafolio Proyectos -->
+    <!-- Portafolio Proyectos Carga externa -->
     <div class="cont-card">
-      <a title="visitar web" href="https://climaapi.vercel.app" target="_blank" class="link-card">
+      <a *ngFor="let project of projectArray" title="visitar web" href="{{project.web}}" target="_blank" class="link-card">
         <div class="img-card">
-          <img src="../../../assets/images/appWeather.png">
+          <img src="{{project.img}}">
         </div>
         <div class="description">
-          <h2>WeatherApp <i class="fas fa-external-link-alt"></i> </h2>
+          <h2>{{ project.title }} <i class="fas fa-external-link-alt"></i> </h2>
           <div class="descrip-text">
-            <p>aplicación meteorológica utilizando una API Con intefaz agradable</p>
-            <h4>Angular, API, Sass, Flexbox </h4>
-          </div>
-        </div>
-      </a>
-
-      <a title="visitar web" href="#" class="link-card">
-        <div class="img-card">
-          <img src="../../../assets/images/acerca.svg">
-        </div>
-        <div class="description">
-          <h2>Null <i class="fas fa-external-link-alt"></i> </h2>
-          <div class="descrip-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsum.</p>
-            <h4>Angular,API,Sass</h4>
-          </div>
-        </div>
-      </a>
-
-      <a title="visitar web" href="#" class="link-card">
-        <div class="img-card">
-          <img src="../../../assets/images/acerca.svg">
-        </div>
-        <div class="description">
-          <h2>null <i class="fas fa-external-link-alt"></i> </h2>
-          <div class="descrip-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae.</p>
-            <h4>Angular,API,Sass</h4>
+            <p>{{ project.description }}</p>
+            <h4> {{project.tecno}} </h4>
           </div>
         </div>
       </a>
