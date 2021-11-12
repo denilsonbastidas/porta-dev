@@ -9,10 +9,7 @@ import {ProjectExterna} from '../../services/cargaExterna';
 export class ProyectosComponent implements OnInit {
 
   public projectArray = ProjectExterna;
-  constructor() {
-    console.log(this.projectArray);
-    
-   }
+  constructor() { }
 
   ngOnInit(): void {
   }

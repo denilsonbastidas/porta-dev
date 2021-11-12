@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TecnologiasComponent implements OnInit {
 
-  constructor() { }
+  public title:string;
+  
+  constructor() { 
+    this.title = 'Tecnologias en las que tengo conocimiento';
+  }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
   }
 
 }

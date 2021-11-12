@@ -25,5 +25,7 @@ export class InicioComponent implements OnInit {
     const style = 'activeHeight';
     this._toggleService.toggleThemes(this.contThemes.nativeElement, style)
   }
+  colorBlue(){
+  }
  
 }

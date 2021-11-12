@@ -10,9 +10,13 @@ export class ToggleService {
   public openTheme: boolean = false;
   public anchoPantalla: any;
 
+  // >>>>
+  public openBlue:boolean;
+
   constructor(private rendererFactory: RendererFactory2) {
     this.renderer = rendererFactory.createRenderer(null, null);
     this.anchoPantalla = window.innerWidth;
+    this.openBlue = false;
   }
   //? >>>>>> Efectos toggle >>>>>>>>>>
   // solo para smallphone
@@ -25,7 +29,7 @@ export class ToggleService {
       this.open = false;
     }
   }
-
+  // >>> mostrar seccion de colores >>>
   toggleThemes(element: any, val: string) {
     if (!this.openTheme) {
       this.renderer.addClass(element, val);
@@ -35,7 +39,8 @@ export class ToggleService {
       this.openTheme = false
     }
   }
-
-
-
+  // // >>> colores de triangulos themes >>>
+  // colorBlue(element:any, val:string){
+  //   this.renderer.addClass(element,val);
+  // }
 }
