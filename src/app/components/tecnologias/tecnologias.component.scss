@@ -119,6 +119,7 @@
     .cont-javascript,
     .cont-jquery,
     .cont-git,
+    .cont-type,
     .cont-angular {
       @extend %cont-card;
 
@@ -156,6 +157,9 @@
 
       .progres-bar-angular {
         @include progress(#e2321f, 75%);
+      }
+      .progres-bar-type {
+        @include progress(#07598f, 75%);
       }
     }
   }
@@ -213,13 +217,15 @@
 @media (max-width:800px) {
   .cont-title {
     margin-top: 0px;
+    padding: 10px;
     h2 {
       font-size: 30px;
     }
   }
 .cont-tecno{
   padding-left: 0px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
   .row,
   .rowDwo,

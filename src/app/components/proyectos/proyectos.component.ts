@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProjectExterna} from '../../services/cargaExterna';
+import {ProjectExterna} from '../../services/projects.service';
 
 @Component({
   selector: 'app-proyectos',

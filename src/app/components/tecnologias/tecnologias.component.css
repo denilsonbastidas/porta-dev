@@ -81,6 +81,7 @@
 .cont-tecno .rowDwo .cont-javascript,
 .cont-tecno .rowDwo .cont-jquery,
 .cont-tecno .rowDwo .cont-git,
+.cont-tecno .rowDwo .cont-type,
 .cont-tecno .rowDwo .cont-angular, .rowProcess .cont-node,
 .rowProcess .cont-mongodb,
 .rowProcess .cont-django,
@@ -243,6 +244,7 @@
 .cont-tecno .rowDwo .cont-javascript i,
 .cont-tecno .rowDwo .cont-jquery i,
 .cont-tecno .rowDwo .cont-git i,
+.cont-tecno .rowDwo .cont-type i,
 .cont-tecno .rowDwo .cont-angular i {
   color: #333;
   font-size: 30px;
@@ -253,6 +255,7 @@
 .cont-tecno .rowDwo .cont-javascript p,
 .cont-tecno .rowDwo .cont-jquery p,
 .cont-tecno .rowDwo .cont-git p,
+.cont-tecno .rowDwo .cont-type p,
 .cont-tecno .rowDwo .cont-angular p {
   margin: 5px;
   font-weight: bold;
@@ -263,6 +266,7 @@
 .cont-tecno .rowDwo .cont-javascript small,
 .cont-tecno .rowDwo .cont-jquery small,
 .cont-tecno .rowDwo .cont-git small,
+.cont-tecno .rowDwo .cont-type small,
 .cont-tecno .rowDwo .cont-angular small {
   color: #888;
   width: 100%;
@@ -273,6 +277,7 @@
 .cont-tecno .rowDwo .cont-javascript .progres-bar-bootstrap,
 .cont-tecno .rowDwo .cont-jquery .progres-bar-bootstrap,
 .cont-tecno .rowDwo .cont-git .progres-bar-bootstrap,
+.cont-tecno .rowDwo .cont-type .progres-bar-bootstrap,
 .cont-tecno .rowDwo .cont-angular .progres-bar-bootstrap {
   background: #7953b3;
   padding: 2px;
@@ -285,6 +290,7 @@
 .cont-tecno .rowDwo .cont-javascript .progres-bar-java,
 .cont-tecno .rowDwo .cont-jquery .progres-bar-java,
 .cont-tecno .rowDwo .cont-git .progres-bar-java,
+.cont-tecno .rowDwo .cont-type .progres-bar-java,
 .cont-tecno .rowDwo .cont-angular .progres-bar-java {
   background: #faed4d;
   padding: 2px;
@@ -297,6 +303,7 @@
 .cont-tecno .rowDwo .cont-javascript .progres-bar-jquery,
 .cont-tecno .rowDwo .cont-jquery .progres-bar-jquery,
 .cont-tecno .rowDwo .cont-git .progres-bar-jquery,
+.cont-tecno .rowDwo .cont-type .progres-bar-jquery,
 .cont-tecno .rowDwo .cont-angular .progres-bar-jquery {
   background: #0669ad;
   padding: 2px;
@@ -309,6 +316,7 @@
 .cont-tecno .rowDwo .cont-javascript .progres-bar-git,
 .cont-tecno .rowDwo .cont-jquery .progres-bar-git,
 .cont-tecno .rowDwo .cont-git .progres-bar-git,
+.cont-tecno .rowDwo .cont-type .progres-bar-git,
 .cont-tecno .rowDwo .cont-angular .progres-bar-git {
   background: #333;
   padding: 2px;
@@ -321,8 +329,22 @@
 .cont-tecno .rowDwo .cont-javascript .progres-bar-angular,
 .cont-tecno .rowDwo .cont-jquery .progres-bar-angular,
 .cont-tecno .rowDwo .cont-git .progres-bar-angular,
+.cont-tecno .rowDwo .cont-type .progres-bar-angular,
 .cont-tecno .rowDwo .cont-angular .progres-bar-angular {
   background: #e2321f;
+  padding: 2px;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.cont-tecno .rowDwo .cont-bootstrap .progres-bar-type,
+.cont-tecno .rowDwo .cont-javascript .progres-bar-type,
+.cont-tecno .rowDwo .cont-jquery .progres-bar-type,
+.cont-tecno .rowDwo .cont-git .progres-bar-type,
+.cont-tecno .rowDwo .cont-type .progres-bar-type,
+.cont-tecno .rowDwo .cont-angular .progres-bar-type {
+  background: #07598f;
   padding: 2px;
   border-radius: 5px;
   -ms-flex-preferred-size: 75%;
@@ -399,13 +421,15 @@
 @media (max-width: 800px) {
   .cont-title {
     margin-top: 0px;
+    padding: 10px;
   }
   .cont-title h2 {
     font-size: 30px;
   }
   .cont-tecno {
     padding-left: 0px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .row > div,
   .rowDwo > div,
