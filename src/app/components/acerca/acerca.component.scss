@@ -1,5 +1,8 @@
 @import "../../../assets/styles/variables";
 
+.container{
+  margin-bottom: 300px;
+}
 .cont-deni {
   position: absolute;
   top: 1%;
@@ -17,8 +20,7 @@
   @include flex(row);
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 110px;
+  margin-top: 150px;
 
   .cont-title {
     flex-basis: 40%;

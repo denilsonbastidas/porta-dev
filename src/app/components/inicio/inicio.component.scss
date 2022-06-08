@@ -2,6 +2,7 @@
 
 .container {
   margin-top: 10px;
+  margin-bottom: 300px;
 }
 
 .triangule {
@@ -74,7 +75,7 @@
 .cont-present {
   width: 80%;
   height: 550px;
-  margin-bottom: 30px;
+  margin-top: 100px;
   @include flex(row);
   align-items: center;
   justify-content: center;
@@ -125,7 +126,6 @@
 
     img {
       width: 100%;
-      margin-top: -15px;
     }
   }
   .cont-photo:hover {
