@@ -7,7 +7,6 @@ export class ToggleService {
 
   private renderer: Renderer2;
   public open: boolean = false;
-  public openTheme: boolean = false;
   public anchoPantalla: any;
 
   // >>>>
@@ -29,18 +28,4 @@ export class ToggleService {
       this.open = false;
     }
   }
-  // >>> mostrar seccion de colores >>>
-  toggleThemes(element: any, val: string) {
-    if (!this.openTheme) {
-      this.renderer.addClass(element, val);
-      this.openTheme = true;
-    } else {
-      this.renderer.removeClass(element, val);
-      this.openTheme = false
-    }
-  }
-  // // >>> colores de triangulos themes >>>
-  // colorBlue(element:any, val:string){
-  //   this.renderer.addClass(element,val);
-  // }
 }

@@ -222,15 +222,15 @@
   }
 
   .color-blue,
-  .color-green,
-  .color-yellow{
+  .color-black,
+  .color-red{
     @include boxcolors($color-claroA)
   }
-  .color-green{
-    background: #2BE390;
+  .color-black{
+    background: black;
   }
-  .color-yellow{
-    background: #eef10d;
+  .color-red{
+    background: red;
   }
 }
 // >>>>>>>>>> Events ->>>>>>>>>>>>>>>>
@@ -288,4 +288,7 @@
      width: 200px !important;
      height: 200px !important;
    }
+}
+.showMenuHeight{
+  height: 150px;
 }

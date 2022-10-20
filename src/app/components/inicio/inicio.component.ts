@@ -9,23 +9,12 @@ import { ToggleService } from 'src/app/services/toggle.service';
 
 export class InicioComponent implements OnInit {
 
-  @ViewChild('contThemes', { static: true }) contThemes!: ElementRef;
-  @ViewChild('triangule', { static: true }) triangule!: ElementRef;
-  public theme:string | undefined;
-  public themeLocal:any | undefined;
-  public openthemes:boolean | undefined;
+  menuColor:boolean = false;
+  colorTriangle!: string;
 
 
-  constructor(
-    private _toggleService: ToggleService,) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  showHeight() {    
-    const style = 'activeHeight';
-    this._toggleService.toggleThemes(this.contThemes.nativeElement, style)
-  }
-  colorBlue(){
-  }
- 
 }

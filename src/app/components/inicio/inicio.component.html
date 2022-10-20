@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="triangule" #triangule>
+  <div class="triangule" [ngStyle]="{'color': colorTriangle}">
     <i class="fad fa-triangle"></i>
     <i class="fad fa-triangle"></i>
     <i class="fad fa-triangle"></i>
@@ -53,17 +53,17 @@
       <img src="../../../assets/images/deni.png" alt="Foto de perfil" />
     </div>
 
-    <!--! contenedor de temas  -->
-    <!-- <div class="cont-themes" #contThemes>
-       <div class="cont-cog" (click)="showHeight()">
+    <!-- contenedor de temas  -->
+    <div class="cont-themes" [class.showMenuHeight]="menuColor" >
+       <div class="cont-cog" (click)="menuColor = !menuColor">
             <i class="fas fa-cog"></i>
        </div>
 
        <div class="cont-colors">
-           <div class="color-blue"></div>
-           <div class="color-green"></div>
-           <div class="color-yellow"></div>
+           <div class="color-blue" (click)="colorTriangle = 'blue'"></div>
+           <div class="color-black" (click)="colorTriangle = 'black'"></div>
+           <div class="color-red" (click)="colorTriangle = 'red'"></div>
        </div>
-    </div> -->
+    </div>
   </div>
 </div>
