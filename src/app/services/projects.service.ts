@@ -2,26 +2,34 @@
 export const ProjectExterna = [
   {
     title: 'Weather',
-    img: '../../../assets/images/appWeather.png',
+    img: 'assets/images/appWeather.png',
     description:
-      'Aplicación meteorológica utilizando una API Con intefaz agradable',
-    tecno: 'Angular, API, Sass, Flexbox',
+      'Aplicación meteorológica utilizando una API Con intefaz agradable.',
+    tecno: 'Angular, API, Sass, Flexbox.',
     web: 'https://github.com/denilsonbastidas/WeatherApi',
   },
   {
-    title: 'Proximamente',
-    img: '../../../assets/images/acerca.svg',
+    title: 'Wikirealty',
+    img: 'assets/images/wikirealty.png',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem?',
-    tecno: 'Lorem ipsum dolor sit',
-    web: '...',
+      'Es un software establecido en USA (Hyperlocal marketing) permitiendo la búsqueda inteligente de inmuebles para la compra u venta.',
+    tecno: 'Angular , Mapbox, Angular material, Mono-repositorio, RXJS.',
+    web: 'https://wikirealty.com/',
+  },
+  {
+    title: 'Tikket',
+    img: 'assets/images/tikket.png',
+    description:
+      'Un social inbox con historial, procesos y clasificación de conversaciones.',
+    tecno: 'Angular, NGRX, RXJS, tailwindCSS.',
+    web: 'https://www.tikket.net/es',
   },
   {
     title: 'Proximamente',
-    img: '../../../assets/images/acerca.svg',
+    img: 'assets/images/acerca.svg',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem?',
-    tecno: 'Lorem ipsum dolor sit',
+      '...',
+    tecno: '...',
     web: '...',
-  },
+  }
 ];

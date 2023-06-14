@@ -4,28 +4,14 @@
     @include flex(row);
     background: #111;
     justify-content: center;
-    min-height: 200px;
+    margin-top: 330px;
   
   .cont-repo{
     text-align: center;
     color: #fff;
   
-    .text-repo{
-      @include flex(column);
-      align-items: center;
-      h3{
-        font-size: 24px;
-        margin-bottom: 0px;
-      }
-      p{
-        color: #ccc;
-        width: 50%;
-        margin-bottom: 20px;
-      }
-    }
-  
     .cont-repo-btn{
-      margin-bottom: 30px;
+      margin: 30px;
   
       a{
         text-decoration: none;

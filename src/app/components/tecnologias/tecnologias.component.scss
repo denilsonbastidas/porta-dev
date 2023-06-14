@@ -86,23 +86,23 @@
       }
 
       .progres-bar-html {
-        @include progress(#fe732e, 95%);
+        @include progress(#fe732e, 100%);
       }
 
       .progres-bar-css {
-        @include progress(#12a1f8, 90%);
+        @include progress(#12a1f8, 100%);
       }
 
       .progres-bar-sass {
-        @include progress(#fa5b7d, 80%);
+        @include progress(#fa5b7d, 100%);
       }
 
       .progres-bar-less {
-        @include progress($color-oscuroA, 75%);
+        @include progress($color-oscuroA, 100%);
       }
 
       .progres-bar-responsive {
-        @include progress(#ccc, 85%);
+        @include progress(#ccc, 100%);
       }
     }
   }
@@ -120,7 +120,8 @@
     .cont-jquery,
     .cont-git,
     .cont-type,
-    .cont-angular {
+    .cont-angular,
+    .cont-react {
       @extend %cont-card;
 
       i {
@@ -140,26 +141,29 @@
       }
 
       .progres-bar-bootstrap {
-        @include progress(#7953b3, 80%);
+        @include progress(#7953b3, 100%);
       }
 
       .progres-bar-java {
-        @include progress(#faed4d, 80%);
+        @include progress(#faed4d, 100%);
       }
 
       .progres-bar-jquery {
-        @include progress(#0669ad, 90%);
+        @include progress(#0669ad, 100%);
       }
 
       .progres-bar-git {
-        @include progress($color-oscuro, 70%);
+        @include progress($color-oscuro, 100%);
       }
 
       .progres-bar-angular {
-        @include progress(#e2321f, 75%);
+        @include progress(#e2321f, 100%);
+      }
+      .progres-bar-react {
+        @include progress(#12a1f8, 100%);
       }
       .progres-bar-type {
-        @include progress(#07598f, 75%);
+        @include progress(#07598f, 100%);
       }
     }
   }
