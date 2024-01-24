@@ -25,11 +25,10 @@ export const ProjectExterna = [
     web: 'https://www.tikket.net/es',
   },
   {
-    title: 'Proximamente',
-    img: 'assets/images/acerca.svg',
-    description:
-      '...',
-    tecno: '...',
-    web: '...',
+    title: 'steadworth',
+    img: 'assets/images/steadworth.png',
+    description:'Un software creado en React - nextJS, que ofrece herramientas a los inversores inmobiliarios',
+    tecno: 'React, NextJS, Graphql y Amplify',
+    web: 'https://steadworth.com/',
   }
 ];
